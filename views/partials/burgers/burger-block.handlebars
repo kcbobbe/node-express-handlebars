@@ -1,0 +1,16 @@
+<li  class="list-group-item d-flex justify-content-between align-items-center">
+	{{name}}
+
+		{{#if devour}}
+    	<button class="change-devoured btn btn-primary" data-id="{{id}}" data-newdevour="{{devour}}">
+
+    Devour!
+    	</button>
+
+    {{else}}
+    {{!-- <span class="badge badge-primary badge-pill">Yum!</span>  --}}
+	  <button class="delete-burger btn btn-danger" data-id="{{this.id}}">Remove</button>
+    
+    {{/if}}
+
+</li>
